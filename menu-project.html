@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action menu button</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="action">
+      <div class="profile" onclick="menuToggle();">
+        <img src="cv_image.jpg" alt="" />
+      </div>
+      <div class="menu">
+        <h3>Emma Gale<br /><span>Aspiring Website Designer</span></h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Why Coders and Founders</a></li>
+          <li>
+            <i class="fab fa-free-code-camp"></i><a href="#">Freecodecamp</a>
+          </li>
+          <li><i class="fab fa-github"></i><a href="#">Github</a></li>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/1bb1956c77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function menuToggle() {
+        const toggleMenu = document.querySelector(".menu");
+        toggleMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
